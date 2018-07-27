@@ -8,7 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
     bs.init({
         server: {
             baseDir: "build"
@@ -16,33 +16,33 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('compile-html', function(){
+gulp.task('compile-html', function () {
     gulp.src('src/templates/**/*.pug')
-    .pipe(pug())
-    .pipe(gulp.dest('build'));
+        .pipe(pug())
+        .pipe(gulp.dest('build'));
 })
 
-gulp.task('compile-css', function(){
+gulp.task('compile-css', function () {
     gulp.src('src/css/*.styl')
-      .pipe(stylus())
-      .pipe(minifyCSS())
-      .pipe(gulp.dest('build/css'));
+        .pipe(stylus())
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('build/css'));
     gulp.src('src/css/*.css')
-    .pipe(gulp.dest('build/css'));      
+        .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('compile-js', function(){
+gulp.task('compile-js', function () {
     gulp.src('src/js/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(concat('index.min.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/js'))
+        // .pipe(sourcemaps.init())
+        // .pipe(concat('index.min.js'))
+        // .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'))
 });
 
 gulp.task('compile-image', () =>
     gulp.src('src/images/**/*.*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('build/images'))
+    // .pipe(imagemin())
+    .pipe(gulp.dest('build/images'))
 );
 
 const watchHtml = gulp.watch('src/templates/*.pug', ['compile-html']);
@@ -55,6 +55,6 @@ const watchJS = gulp.watch('src/js/*.js', ['compile-js']);
 watchJS.on('change', bs.reload);
 
 const watchImages = gulp.watch('src/images/*', ['compile-image']);
-watchImages.on('change', bs.reload); 
+watchImages.on('change', bs.reload);
 
 gulp.task('default', ['compile-html', 'compile-css', 'compile-js', 'compile-image', 'browser-sync']);

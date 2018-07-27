@@ -5,32 +5,64 @@ block title
 
 block content
     .container
-        .card
+        .card#outer-card
+            .card-image
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155.977097511565!2d74.81840849382483!3d12.95725793379339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350530000cd0d%3A0x5fee3a88a4b50221!2sDeccan+Plast+Industries!5e0!3m2!1sen!2sin!4v1532329005794" class="google-map" frameborder="0" style="border:0" allowfullscreen)
             .card-content
                 h1.page-title.center-align  Contact
-        .row
-           form.col.s12.
-        .row
-          .input-field.col.s6
-           input#first_name.validate( type='text')
-           label(for='first_name') First Name
-          .input-field.col.s6
-           input#last_name.validate(type='text')
-           label(for='last_name') Last Name
-        .row
-         .input-field.col.s12
-          input#password.validate(type='password')
-          label(for='password') Password
-        .row
-         .input-field.col.s12
-          input#email.validate(type='email')
-          label(for='email') Email
-        .row
-         .input-field.col.s12
-          input#email.validate(type='text')
-          label(for='message') Message
-          <a class="btn btn-default">Submit</a>
-
+                .row
+                    .col.m6
+                        h3.center-align Write to us
+                        form
+                            .row
+                                .input-field.col.s12
+                                    input#cf_name.validate(type='text')
+                                    label(for='cf_name') Name
+                            .row
+                                .input-field.col.s12
+                                    input#cf_email.validate(type='email')
+                                    label(for='cf_email') Email
+                            .row
+                                .input-field.col.s12
+                                    input#cf_phone.validate(type='number')
+                                    label(for='cf_phone') Phone
+                            .row
+                                .input-field.col.s12
+                                    textarea#cf-message.materialize-textarea  
+                                    label(for="cf-message") Message 
+                            a(class="waves-effect waves-light btn btn-small") Submit
+                    .col.m6
+                        h3.center-align Contact Info
+                        .center-align
+                            p.address   
+                                strong 
+                                    span.brand-lead Deccan Plast Industries
+                            p.address 6-B/1, Industrial Area, Baikampady,
+                                |   Mangalore-575011
+                                |   KARNATAKA, INDIA
+                            p.address Toll Free No: 1800 843 3322
+                            p.address Phone: +91 824 2408522 / 2408622
+                            p.address Customer No : : +91 9845080722 / 9845725722
+                            p.address Email: info@deccanplast.com/ deccanplast@gmail.com
+                            p.address Website: www.deccanplast.com
+                        .row
+                            .col.s12
+                                h3.center-align Follow us on Social Media
+                                .center-align
+                                    a(href="https://www.facebook.com/deccanplastind/" class="waves-effect waves-light btn-floating  btn-small red btn-social") 
+                                        i.fab.fa-facebook-f
+                                    a(href="https://twitter.com/deccanplastind" class="waves-effect waves-light btn-floating  btn-small red btn-social") 
+                                        i.fab.fa-twitter
+                                    a(href="https://www.instagram.com/deccanplastind/" class="waves-effect waves-light btn-floating  btn-small red btn-social") 
+                                        i.fab.fa-instagram
+                                    a(href="https://www.linkedin.com/in/deccanplastind/" class="waves-effect waves-light btn-floating  btn-small red btn-social") 
+                                        i.fab.fa-linkedin-in
+                                    a(href="https://www.youtube.com/channel/UCVMaPShotuqgcBpbdzU4sdA" class="waves-effect waves-light btn-floating  btn-small red btn-social") 
+                                        i.fab.fa-youtube
+                .center-align                                                        
+                    a(href="index.html" class="waves-effect waves-light btn-small red") 
+                        i.material-icons.left home
+                        | Home                                           
 
           
           

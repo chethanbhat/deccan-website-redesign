@@ -1,7 +1,20 @@
 body
-    background-color azure
+    background-color #E8CEFB
+    color #492B6F
     font-size 16px
     padding 0
+
+#outer-card,
+.purple-card
+    background-color #492B6F
+    color #F4EBFF
+
+.pink-card
+    background-color #E8CEFB
+    color #492B6F
+
+.category-name
+    color #492B6F
 
 .menu-icon
     position: absolute
@@ -9,10 +22,60 @@ body
     top 1%
     left 2.5%
 
+#main-footer
+    background-color #492B6F
+    color #F4EBFF
+    margin 5% 0 0 0
+
+.brand-lead
+    font-size 2rem
+
+a.creator
+    color red
+
+// Media Page
+.youtube-ads
+    width 100%
+    min-height 480px
+.media-container
+    padding 2.5% 0    
+
+// Contact Page
+
+.google-map
+    display block
+    width 100%
+    min-height 360px
+    margin 0 auto
+.address
+    line-height 2
+
+// Forms
+.input-field label
+    color #E8CEFB
+.input-field input[type=text],
+.input-field input[type=email],
+.input-field input[type=number],
+.input-field textarea
+    color #E8CEFB
+.input-field input[type=text]:focus + label
+    color #E8CEFB
+.input-field input[type=text]:focus
+    border-bottom: 1px solid #E8CEFB;
+    box-shadow: 0 1px 0 0 #E8CEFB; 
+.input-field input[type=text].valid
+    border-bottom: 1px solid #E8CEFB;
+    box-shadow: 0 1px 0 0 #E8CEFB;
+.input-field input[type=text].invalid
+    border-bottom: 1px solid #E8CEFB;
+    box-shadow: 0 1px 0 0 #E8CEFB;
+.input-field .prefix.active
+    color: #E8CEFB;        
+
 // Side Navigation
    
 .sidenav
-    background-color moccasin
+    background-color #F4EBFF
     display flex
     flex-direction column
     #menu-close
@@ -33,8 +96,7 @@ body
         li
             margin: 5px 0
         a
-            color: #333
-            font-weight: bold
+            color: #492B6F
             font-size: 1.2rem
     #footer
         align-self: center
@@ -50,6 +112,7 @@ body
         height 360px
     .ritz-card
         height 500px
+        background-color #E8CEFB
     .category-page-img
         max-height 50vh
     .category-title, .page-title
@@ -61,17 +124,6 @@ body
     .feature-list
         list-style-type square
         margin-left 20px
- 
-    form
-        text-align center
-        padding 20px 20px
-        color red
-
-    label
-        color #C62828 
-        font-weight 300
-        z-index 1
-        font-weight 700
     .label
         color black
 .btn 
@@ -96,9 +148,9 @@ body
 .main-nav
     min-height 100px
     padding-top 10px
-    background-color #F5F5DC
+    background-color #F4EBFF
     a
-        color maroon
+        color #492B6F
         font-size 1.2rem
 .slider-card
     padding 5%        
@@ -115,7 +167,30 @@ body
 .btn-social
     margin 5px  
 #home-menu-toggle      
-    display none    
+    display none
+.category-page-img
+    object-fit: cover
+#dining-cover-pic
+    background-image: url('../images/cover/tables.png')
+.cover-pic
+    min-height: 720px
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;   
+
+
+.errors
+    color maroon
+    font-size 0.9rem
+    margin-bottom 20px
+
+#quote-modal
+    label
+        color #492B6F
+    input
+        color #492B6F
+    input::placeholder
+        color #999999
 
 // Medium Devices
 @media screen and (max-width: 900px)
@@ -126,7 +201,7 @@ body
     .ritz-card
         min-height 525px
     #home-menu-toggle      
-        display block        
+        display block           
 
 // Mobile Phone
 @media screen and (max-width: 600px)
@@ -135,7 +210,8 @@ body
     .category-card
         min-height 400px
     #home-menu-toggle      
-        display block 
+        display block        
+        
 
 
 

@@ -1,0 +1,27 @@
+#quote-modal.modal
+    .modal-content
+        h3 Modal Header
+        p Please fill all your details.
+        p.errors
+        form(action="", id="request-quote-form")
+            .input-field
+                input(placeholder="John Doe", id="rq-name", type="text", class="validate")
+                label(for="rq-name") Name
+            .input-field
+                input(placeholder="johndoe@gmail.com", id="rq-email", type="email", class="validate")
+                label(for="rq-email") Email
+            .input-field
+                input(placeholder="10 Digit Mobile No", id="rq-phone", type="tel", class="validate")
+                label(for="rq-phone") Phone    
+            .input-field
+                input(placeholder="575001", id="rq-pincode", type="number", class="validate")
+                label(for="rq-pincode") Pincode
+            .input-field
+                input(placeholder="Mangalore", id="rq-location", type="text", class="validate")
+                label(for="rq-location") Location
+            .input-field
+                input(placeholder="Message", id="rq-message", type="text", class="validate")
+                label(for="rq-message") Message                                                                                           
+    .modal-footer
+        a.modal-send.waves-effect.waves-green.btn.btn-flat(href="#") Send
+        a.modal-close.waves-effect.waves-green.btn.btn-flat(href="#") Close

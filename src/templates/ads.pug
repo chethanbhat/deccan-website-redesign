@@ -5,6 +5,16 @@ block title
 
 block content
     .container
-        .card
-            iframe(width='1080' height='315' src='https://www.youtube.com/embed/7fEct1Th5kE' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen='')
-            iframe(width='1080', height='315', src='https://www.youtube.com/embed/pUUAeJqiCok', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+        .card#outer-card.media-container
+            .container
+                h3.page-title.center-align Ads of Deccan Plast Industries
+                p.page-description Various advertisements launched by Deccan Plast Industries in popular TV Channels for Branding & Advertising.
+                .row
+                    .col.s12.center-align
+                        iframe(src='https://www.youtube.com/embed/7fEct1Th5kE' class="youtube-ads" frameborder='0' allow='autoplay; encrypted-media' allowfullscreen='')
+                    .col.s12.center-align
+                        iframe(src='https://www.youtube.com/embed/pUUAeJqiCok', class="youtube-ads" frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                .center-align                                                        
+                    a(href="index.html" class="waves-effect waves-light btn-small red") 
+                        i.material-icons.left home
+                        | Home   

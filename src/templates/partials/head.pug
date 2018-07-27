@@ -6,6 +6,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         //- Materialize
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css")
+        //- Font Awesome
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.1/css/all.css", integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ", crossorigin="anonymous")
         //- Material Icons
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
         //- Main Style Sheet
@@ -22,5 +24,8 @@ html(lang="en")
                 include footer.pug
         .content
             block content
+            block quote
+                include request-quote.pug
         block scripts
+            include owl.pug
             include scripts.pug
