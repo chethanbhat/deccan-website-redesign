@@ -1,8 +1,25 @@
+// General Settings
+
 body
     background-color #E8CEFB
+    background-attachment fixed
     color #492B6F
     font-size 16px
     padding 0
+h1
+    font-size 4rem
+h2 
+    font-size 3.5rem
+h3
+    font-size 3rem
+h4 
+    font-size 2.5rem
+h5
+    font-size 2rem
+h6 
+    font-size 1.6rem
+
+// Layout Styles
 
 #outer-card,
 .purple-card
@@ -13,8 +30,104 @@ body
     background-color #E8CEFB
     color #492B6F
 
+.category-page-img
+    object-fit: cover
+
+.cover-pic
+    min-height: 720px
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;       
+
+.content
+    min-height: 100vh
+    .lead
+        font-weight bold
+        color #636363
+    .solutions-card
+        height 450px
+        @media screen and (max-width: 1200px)
+            height 340px
+        @media screen and (max-width: 900px)
+            height 320px
+        @media screen and (max-width: 600px)
+            height 340px
+    .category-card
+        height 380px
+        @media screen and (max-width: 1200px)
+            height 340px
+        @media screen and (max-width: 900px)
+            height 400px
+        @media screen and (max-width: 600px)
+            height 360px
+    .ritz-card
+        height 500px
+        background-color #E8CEFB
+        margin 20px auto
+    .category-page-img
+        max-height 50vh
+    .category-title, .page-title
+        margin 1% auto !important
+    .category-description, .page-description
+        line-height: 1.2
+        margin 2.5% auto !important
+        text-align justify
+    .feature-list
+        list-style-type square
+        margin-left 20px
+    .label
+        color black
+
+.product-btns
+    margin 20px auto
+    display: flex
+    justify-content: center
+    a.btn
+        margin 20px
+    @media screen and (max-width: 900px)
+        flex-direction: column
+        justify-content: center;
+        align-items: center;                 
+
+// Home Page
+
+#scroll-top
+    display none
+    position fixed
+    bottom 20px
+    right 20px
+
+.space
+    margin 10%
+
+// Category Slider - Filmstrp
+
+.category-slider
+    a
+     color #492B6F
+     text-decoration none
+
+.owl-prev,
+.owl-next
+    font-size 30px !important
+    margin 0 10px !important     
+
+
+// Featured Carousel
+
+.featured-carousel
+    text-decoration none
+    color #492B6F
+
+#new-arrival-carousel  
+    margin-top -200px
+
+// Category Page (Furniture, MHS, Storage)
+
 .category-name
     color #492B6F
+
+// Navigation 
 
 .menu-icon
     position: absolute
@@ -22,16 +135,89 @@ body
     top 1%
     left 2.5%
 
+.main-nav
+    min-height 100px
+    padding-top 10px
+    background-color #F4EBFF
+    a
+        color #492B6F
+        font-size 1.2rem
+
+#page-nav        
+    margin-bottom 5%   
+
+.home-menu-toggle,
+.page-menu-toggle      
+    display none        
+
+// Side Navigation
+   
+.sidenav
+    background-color #F4EBFF
+    display flex
+    flex-direction column
+    #menu-close
+        align-self flex-end
+        margin-right 2.5%
+        margin-top 2.5%
+        cursor pointer
+        display flex
+        justify-content center
+        align-items center
+    .close-icon
+        align-self center
+    .brand
+        display block
+        img
+            display: block
+            margin 20px auto
+            padding 10px
+
+    .nav
+        padding 25px
+        padding-left 50px
+        li
+            margin: 5px 0
+        a
+            color: #492B6F
+            font-size: 1.2rem
+    #footer
+        align-self: center    
+
+
+// Main Footer 
+
 #main-footer
     background-color #492B6F
     color #F4EBFF
+    padding 30px
     margin 5% 0 0 0
+
+#play-store-btn
+    margin 20px
+    font-weight bold
+    color #F4EBFF
+.app-icon
+    height 150px
+    width 150px
 
 .brand-lead
     font-size 2rem
 
+.btn-social
+    margin 5px         
+
 a.creator
     color red
+
+// About Page
+
+.iso-certificate 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5px
 
 // Media Page
 .youtube-ads
@@ -50,7 +236,37 @@ a.creator
 .address
     line-height 2
 
-// Forms
+// Request Quote
+
+.errors
+    color maroon
+    font-size 0.9rem
+    margin-bottom 20px
+
+#send-quote
+    background #492B6F
+    color #F4EBFF
+    margin 10px
+
+#cancel-quote
+    background red
+    color #F4EBFF  
+    margin 10px  
+
+#quote-modal
+    label
+        color #492B6F
+    input
+        color #492B6F
+    input::placeholder
+        color #999999
+
+// Contact Form
+
+.cf-errors
+    color tomato    
+    margin-bottom 20px
+
 .input-field label
     color #E8CEFB
 .input-field input[type=text],
@@ -70,62 +286,8 @@ a.creator
     border-bottom: 1px solid #E8CEFB;
     box-shadow: 0 1px 0 0 #E8CEFB;
 .input-field .prefix.active
-    color: #E8CEFB;        
+    color: #E8CEFB;    
 
-// Side Navigation
-   
-.sidenav
-    background-color #F4EBFF
-    display flex
-    flex-direction column
-    #menu-close
-        align-self flex-end
-        margin-right 2.5%
-        margin-top 2.5%
-        cursor pointer
-    .brand
-        display block
-        img
-            display: block
-            margin 20px auto
-            padding 10px
-
-    .nav
-        padding 25px
-        padding-left 50px
-        li
-            margin: 5px 0
-        a
-            color: #492B6F
-            font-size: 1.2rem
-    #footer
-        align-self: center
-
-.content
-    min-height: 100vh
-    .lead
-        font-weight bold
-        color #636363
-    .solutions-card
-        height 450px
-    .category-card
-        height 360px
-    .ritz-card
-        height 500px
-        background-color #E8CEFB
-    .category-page-img
-        max-height 50vh
-    .category-title, .page-title
-        margin 1% auto !important
-    .category-description, .page-description
-        line-height: 1.2
-        margin 2.5% auto !important
-        text-align justify
-    .feature-list
-        list-style-type square
-        margin-left 20px
-    .label
-        color black
 .btn 
 	border none
     width 200px
@@ -140,77 +302,58 @@ a.creator
     border-radius 5px
     margin-right 6px
 
-.wrapper
-    min-height 100vh
-    background-image url(../images/banner_new_1.png)
-    background-size cover
 
-.main-nav
-    min-height 100px
-    padding-top 10px
-    background-color #F4EBFF
-    a
-        color #492B6F
-        font-size 1.2rem
-.slider-card
-    padding 5%        
-.slider-card img
-    width 300px
-    height 250px
-.owl-prev,
-.owl-next
-    font-size 30px !important
-    margin 0 10px !important
-#new-arrival-carousel
-    height 680px    
-    margin-top -300px
-.btn-social
-    margin 5px  
-#home-menu-toggle      
-    display none
-.category-page-img
-    object-fit: cover
-#dining-cover-pic
-    background-image: url('../images/cover/tables.png')
-.cover-pic
-    min-height: 720px
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;   
-
-
-.errors
-    color maroon
-    font-size 0.9rem
-    margin-bottom 20px
-
-#quote-modal
-    label
-        color #492B6F
-    input
-        color #492B6F
-    input::placeholder
-        color #999999
+// Mobile Phone
+@media screen and (max-width: 1200px)  
+    .dummy-class
+        display block
 
 // Medium Devices
 @media screen and (max-width: 900px)
-    .solutions-card
-        max-height 325px
-    .category-card
-        min-height 400px
-    .ritz-card
-        min-height 525px
-    #home-menu-toggle      
-        display block           
+    .home-menu-toggle,
+    .page-menu-toggle       
+        display block
+    #menu-close
+        display block
+    #new-arrival-carousel  
+        margin-top -100px       
+    h1
+        font-size 3rem
+    h2 
+        font-size 2.5rem
+    h3
+        font-size 2rem
+    h4 
+        font-size 1.5rem
+    h5
+        font-size 1.2rem
+    h6 
+        font-size 1.0rem
+    p
+        font-size 1.6rem            
+                               
 
 // Mobile Phone
 @media screen and (max-width: 600px)
-    .solutions-card
-        max-height 400px
-    .category-card
-        min-height 400px
-    #home-menu-toggle      
-        display block        
+    .home-menu-toggle,
+    .page-menu-toggle      
+        display block    
+    #new-arrival-carousel  
+        margin-top -100px   
+    h1
+        font-size 2.5rem
+    h2 
+        font-size 2rem
+    h3
+        font-size 1.6rem
+    h4 
+        font-size 1.2rem
+    h5
+        font-size 1.0rem
+    h6 
+        font-size 0.8rem 
+    p
+        font-size 1.2rem                      
         
 
 

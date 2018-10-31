@@ -10,22 +10,56 @@ html(lang="en")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.1/css/all.css", integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ", crossorigin="anonymous")
         //- Material Icons
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        //- xZoom library
+        link(rel="stylesheet", href="css/xzoom.css")
         //- Main Style Sheet
         link(rel="stylesheet", href="css/main.css")
+       
+
         block title
             title Deccan Plast Industries, Mangalore
     body
-        a#menu-toggle.menu-icon.waves-effect.waves-light.btn-floating.btn-small.red
+        a#menu-toggle.menu-icon.waves-effect.waves-light.btn-floating.btn-small.red.page-menu-toggle
             i.material-icons menu
         #side-nav.sidenav
             block side-nav
                 include slide-nav.pug
             block footer
-                include footer.pug
+                include footer.pug            
         .content
+            block page
+                - var page = "products"
+            nav.main-nav#page-nav
+                .container
+                    .nav-wrapper
+                        a(href="#", class="brand-logo") 
+                            img(src="images/logo.png", alt="Logo of Deccan Plast Industries")
+                        ul#nav-mobile.right.hide-on-med-and-down
+                            li(class=(page === "home" ? "active" : undefined))
+                                a(href="index.html") Home
+                            li(class=(page === "about" ? "active" : undefined))
+                                a(href="about.html") About
+                            li(class=(page === "products" ? "active" : undefined))
+                                a(href="products.html") Products
+                            li(class=(page === "media" ? "active" : undefined))
+                                a(href="ads.html") Media                            
+                            li(class=(page === "careers" ? "active" : undefined))
+                                a(href="career.html") Careers
+                            li(class=(page === "contact" ? "active" : undefined))
+                                a(href="contact.html") Contact                     
             block content
             block quote
                 include request-quote.pug
+        .footer
+            block main-footer
+                include main-footer.pug
+            p.center-align Site By 
+             a.creator(href="https://vibs.co.in/") VIBS, Mangalore
+            p.center-align Design, Development & Digital Marketing   
+            a#scroll-top.waves-effect.waves-light.btn-floating.btn-big.red
+                    i.material-icons.right arrow_upward
+                    | View All
+                                             
         block scripts
             include owl.pug
             include scripts.pug

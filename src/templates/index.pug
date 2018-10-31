@@ -1,93 +1,127 @@
 extends partials/home.pug
 
 block title 
-        title Welcome
+        title Deccan Plast Industries, Mangalore
 
 block content
-        nav.main-nav
-            .container
-                .nav-wrapper
-                    a(href="#", class="brand-logo") 
-                        img(src="images/logo.png", alt="Logo of Deccan Plast Industries")
-                    ul#nav-mobile.right.hide-on-med-and-down
-                        li
-                            a(href="index.html") Home
-                        li
-                            a(href="about.html") About
-                        li
-                            a(href="products.html") Products
-                        li
-                            a(href="products.html") Media                            
-                        li
-                            a(href="career.html") Career
-                        li
-                            a(href="contact.html") Contact                                                                                                  
-                    
-        #main-slider.carousel.carousel-slider
-          a.carousel-item(href='#one!')
-             img(src='images/cover/Bentley.png')
-          a.carousel-item(href='#two!')
-             img(src='images/cover/Ferrari.png')
-          a.carousel-item(href='#three!')
-             img(src='images/cover/Bentley.png')
-          a.carousel-item(href='#four!')
-             img(src='images/cover/Ferrari.png')
+        .carousel.carousel-slider#main-carousel-slider
+            .carousel-item
+                img(src='images/main-slider/slider_1.png')
+            .carousel-item
+                img(src='images/main-slider/slider_2.png')
+            .carousel-item
+                img(src='images/main-slider/slider_3.png')                                                                                                                            
+
         .container
             h1.center-align Welcome to Deccan Plast Industries
-            p.page-description Founded in 1992, Deccan Group is an acknowledged initiator and innovator of coastal Karnataka's plastics industry. No wonder that Deccan Plast Industries were first to offer the widest and most comprehensive Quality Molded Solutions.The Deccan Plast Industries has an advanced “state of the art” factory in Mangaluru, constructed in the standards matching any MNC factory having latest injection molding machines and molds and other equipment, is powered by latest technology complemented by in-house R & D and product development
+            p.page-description Founded in 1992, Deccan Group is an acknowledged initiator and innovator of coastal Karnataka's plastics industry. No wonder that Deccan Plast Industries were first to offer the widest and most comprehensive Quality Molded Solutions.The Deccan Plast Industries has an advanced “state of the art” factory in Mangaluru, constructed in the standards matching any MNC factory having latest injection molding machines and molds and other equipment, is powered by latest technology complemented by in-house R & D and product development,
             h3.center-align Our Premium Range of Products
+            p.center-align.page-description We offer most premium range of plastic molded furniture to choose from for individual liking and needs. Deccan Plast Quality Molded Solutions consists of a vast array of plastic molded furniture, like Premium Cabinets, Premium novelty chairs, Relax chairs, Premium Arm chairs, Ornamental chairs, Premium Dining Chairs, Midback arm chairs, Dining chairs, Armless chairs, Seating systems, Multipurpose tables, Trolley, Dining tables, Stools, Chairs for children, Rocker Toy for children and many more.
+            p.center-align.page-description We also have Material Handling Solutions like crates and baskets to facilitate storing and logistics of a very vast range of industrial and consumer products.
+
+
             .owl-carousel.owl-theme
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-                .card.z-depth-2.slider-card
-                    .card-image
-                        img(src="images/products/furniture/s_lexus_3.png", class="home-card-img", alt="Lexus high back chairs, Deccan Plast Industries.")
-                        h5 Lexus Premium High Back Chairs
-            .center-align                                                                                                                                                                                                                                                                    
+                .category-slider
+                    a(href="/storage-solutions.html")
+                        img(src="images/categories/storage_solutions_cat_pic.png", class="home-card-img", alt="Storage Solutions, Cabinets, Deccan Plast Industries.")
+                        h5.center-align Storage Solutions          
+                .category-slider
+                    a(href="/premium-relax-chairs.html")
+                        img(src="images/categories/premium_relax.png", class="home-card-img", alt="Premium relax chairs, Deccan Plast Industries.")
+                        h5.center-align Relax Chairs
+                .category-slider
+                    a(href="/ornamental-chairs.html")
+                        img(src="images/categories/impreza.png", 
+                        class="home-card-img", alt="Ornamental chairs, Deccan Plast Industries.")
+                        h5.center-align Ornamental Chairs
+                .category-slider
+                    a(href="/novelty-chairs.html")
+                        img(src="images/categories/novelty_chairs.png", 
+                        class="home-card-img", alt="Novelty chairs, Deccan Plast Industries.")
+                        h5.center-align Novelty Chairs
+                .category-slider
+                    a(href="/premium-arm-chairs.html")
+                        img(src="images/categories/premium_arm.png", class="home-card-img", alt="Premium Arm Chairs, Deccan Plast Industries.")
+                        h5.center-align Arm Chairs    
+                .category-slider
+                    a(href="/premium-dining-chairs.html")
+                        img(src="images/categories/premium_dining.png", class="home-card-img", alt="Dining Chairs, Deccan Plast Industries.")
+                        h5.center-align Dining Chairs                            
+                .category-slider
+                    a(href="/premium-high-back-chairs.html")
+                        img(src="images/categories/premium_high_back.png", class="home-card-img", alt="High back chairs, Deccan Plast Industries.")
+                        h5.center-align High Back Chairs    
+                .category-slider
+                    a(href="/midback-arm-chairs.html")
+                        img(src="images/categories/midback_chair_cat_pic.png", class="home-card-img", alt="Midback Arm Chairs, Deccan Plast Industries.")
+                        h5.center-align Midback Arm Chairs 
+                .category-slider
+                    a(href="/high-back-dining-chairs.html")
+                        img(src="images/categories/high_back_dining.png", class="home-card-img", alt="Midback Arm Chairs, Deccan Plast Industries.")
+                        h5.center-align High Back Dining Chairs 
+                .category-slider
+                    a(href="/dining-tables.html")
+                        img(src="images/categories/dining_tables.png", class="home-card-img", alt="Dining Tables, Deccan Plast Industries.")
+                        h5.center-align Dining Tables   
+                .category-slider
+                    a(href="/center-tables-trolley.html")
+                        img(src="images/categories/center_tables.png", class="home-card-img", alt="Center Tables, Deccan Plast Industries.")
+                        h5.center-align Center Tables
+                .category-slider
+                    a(href="/children-chairs.html")
+                        img(src="images/categories/children_chairs.png", class="home-card-img", alt="Children Chairs, Deccan Plast Industries.")
+                        h5.center-align Children Chairs
+                .category-slider
+                    a(href="/stools.html")
+                        img(src="images/categories/stool_cat.png", class="home-card-img", alt="Stools, Deccan Plast Industries.")
+                        h5.center-align Stools  
+                .category-slider
+                    a(href="/crates.html")
+                        img(src="images/categories/crates_cat_pic.png", class="home-card-img", alt="Crates, Deccan Plast Industries.")
+                        h5.center-align Crates 
+                .category-slider
+                    a(href="/baskets.html")
+                        img(src="images/categories/butti.png", class="home-card-img", alt="Baskets, Deccan Plast Industries.")
+                        h5.center-align Baskets   
+                .category-slider
+                    a(href="/multi-seating-solutions.html")
+                        img(src="images/categories/study_chair.png", class="home-card-img", alt="Multi Seating Soluions, Study Chairs, Deccan Plast Industries.")
+                        h5.center-align Multi Seaters       
+                .category-slider
+                    a(href="/armless-chairs.html")
+                        img(src="images/categories/armless.png", class="home-card-img", alt="Armless Chairs, Shamiyana Chairs, Deccan Plast Industries.")
+                        h5.center-align Armless Chairs                                                                                                                                                                                                                     
+
+            .center-align                                                                                                                        
                 a(href="products.html" class="waves-effect waves-light btn-small red") 
                     i.material-icons.right chevron_right
                     | View All
 
-            h3.center-align New Arrivals
-            p.page-description   Deccan Plast Industries recently launched a wide range of new products such as Cabinets, Premium Arm Chairs, Premium Armless Chairs, Baby Chair and Stools.
+            h3.center-align Featured Products
+            p.center-align.page-description We are proud of our superior products, with a sharp focus on quality, colors and finish, makes Deccan Plast really functional and practical solutions in your day to day life.
+            .space
             .carousel#new-arrival-carousel
-                .carousel-item
-                    h3.center-align Altima
-                    img(src='images/products/furniture/altima_premium_arm_chairs.png')
-                .carousel-item
-                    h3.center-align Altima
-                    img(src='images/products/furniture/focus_premium_armless_chairs.png')
-                .carousel-item
-                    h3.center-align Altima
-                    img(src='images/products/furniture/optima_premium_arm_chairs.png')
-                .carousel-item
-                    h3.center-align Altima                       
-                    img(src='images/products/furniture/pleasure_06_bath_stool.png')
-                .carousel-item
-                    h3.center-align Altima                        
-                    img(src='images/products/furniture/fusion_premium_armless_chairs.png')
+                a(href="/storage-solutions.html").carousel-item.featured-carousel
+                    img(src='images/carousel/liberty_small_na.png')
+                    h5.center-align Liberty Small
+                a(href="/storage-solutions.html").carousel-item.featured-carousel
+                    img(src='images/carousel/liberty_na.png')
+                    h5.center-align Liberty Big
+                a(href="/ornamental-chairs.html").carousel-item.featured-carousel
+                    img(src='images/carousel/impreza_na.png')
+                    h5.center-align Impreza
+                a(href="/novelty-chairs.html").carousel-item.featured-carousel
+                    img(src='images/carousel/altima_na.png')
+                    h5.center-align Altima                       
+                a(href="/novelty-chairs.html").carousel-item.featured-carousel
+                    img(src='images/carousel/focus_na.png')
+                    h5.center-align Focus  
+                a(href="/novelty-chairs.html").carousel-item.featured-carousel
+                    img(src='images/carousel/fusion_na.png')
+                    h5.center-align Fusion     
+                a(href="/material-handling-solutions.html").carousel-item.featured-carousel
+                    img(src='images/categories/crates_cat_pic.png')
+                    h5.center-align JCSW02                                                                                   
             .center-align                                                                                                                                                                                                                                                                    
                 a(href="products.html" class="waves-effect waves-light btn-small red") 
                     i.material-icons.right chevron_right

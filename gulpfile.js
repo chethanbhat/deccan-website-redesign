@@ -45,6 +45,11 @@ gulp.task('compile-image', () =>
     .pipe(gulp.dest('build/images'))
 );
 
+gulp.task('compile-pdf', () =>
+    gulp.src('src/pdf/*.pdf')
+    .pipe(gulp.dest('build/pdf'))
+);
+
 const watchHtml = gulp.watch('src/templates/*.pug', ['compile-html']);
 watchHtml.on('change', bs.reload);
 
@@ -57,4 +62,4 @@ watchJS.on('change', bs.reload);
 const watchImages = gulp.watch('src/images/*', ['compile-image']);
 watchImages.on('change', bs.reload);
 
-gulp.task('default', ['compile-html', 'compile-css', 'compile-js', 'compile-image', 'browser-sync']);
+gulp.task('default', ['compile-html', 'compile-css', 'compile-js', 'compile-pdf', 'compile-image', 'browser-sync']);

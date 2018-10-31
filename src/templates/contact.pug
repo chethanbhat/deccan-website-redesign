@@ -4,6 +4,8 @@ block title
         title Contact
 
 block content
+    block page
+        - var page = "contact"
     .container
         .card#outer-card
             .card-image
@@ -11,8 +13,9 @@ block content
             .card-content
                 h1.page-title.center-align  Contact
                 .row
-                    .col.m6
+                    .col.m6#contact-form
                         h3.center-align Write to us
+                        .cf-errors
                         form
                             .row
                                 .input-field.col.s12
@@ -28,9 +31,9 @@ block content
                                     label(for='cf_phone') Phone
                             .row
                                 .input-field.col.s12
-                                    textarea#cf-message.materialize-textarea  
+                                    input#cf-message.validate(type='text')
                                     label(for="cf-message") Message 
-                            a(class="waves-effect waves-light btn btn-small") Submit
+                            a(class="waves-effect waves-light btn btn-small", id="send-contact-info") Submit
                     .col.m6
                         h3.center-align Contact Info
                         .center-align
@@ -61,8 +64,8 @@ block content
                                         i.fab.fa-youtube
                 .center-align                                                        
                     a(href="index.html" class="waves-effect waves-light btn-small red") 
-                        i.material-icons.left home
-                        | Home                                           
+                        i.material-icons.left arrow_back
+                        | BACK                                         
 
           
           

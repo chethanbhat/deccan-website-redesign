@@ -1,0 +1,279 @@
+FROM - index.html	
+TO - https://deccanplast.com/
+
+
+FROM - about_deccan_plast.html
+TO - https://deccanplast.com/about.html
+
+
+
+FROM - products_of_deccan_plast.html
+TO - https://deccanplast.com/products.html
+
+
+FROM - ads_of_deccan_plast.html
+TO - https://deccanplast.com/ads.html
+
+
+FROM - career_in_deccan.html
+TO - https://deccanplast.com/career.html
+
+
+FROM - contact_deccan_plast.php
+TO - https://deccanplast.com/contact.html
+
+
+FROM - furniture.html
+TO - https://deccanplast.com/furniture.html
+
+
+FROM - storage-solutions.html
+TO - https://deccanplast.com/storage-solutions.html
+
+
+FROM - material_handling_solutions.html
+TO - https://deccanplast.com/material-handling-solutions.html
+
+
+FROM - premium_relax_chairs.html
+TO - https://deccanplast.com/premium-relax-chairs.html
+
+
+FROM - premium_arm_chairs.html
+TO - https://deccanplast.com/premium-arm-chairs.html
+
+
+FROM - premium_high_back_chairs.html
+TO - https://deccanplast.com/premium-high-back-chairs.html
+
+
+FROM - premium_dining_chairs.html
+TO - https://deccanplast.com/premium-dining-chairs.html
+
+FROM - mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+FROM - high_back_dining_chairs.html
+TO - https://deccanplast.com/high-back-dining-chairs.html
+
+FROM - armless_chairs.html
+TO - https://deccanplast.com/armless-chairs.html
+
+
+FROM - dining_tables.html
+TO - https://deccanplast.com/dining-tables.html
+
+
+FROM - center_tables.html
+TO - https://deccanplast.com/center-tables-trolley.html
+
+
+FROM - ritz_multi_seating.html
+TO - https://deccanplast.com/multi-seating-solutions.html
+
+
+FROM - children-chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - stools.html
+TO - https://deccanplast.com/stools.html
+
+
+FROM - ferrari_premium_relax_chairs.html
+TO - https://deccanplast.com/premium-relax-chairs.html
+
+FROM - lotus_premium_relax_chairs.html
+TO - https://deccanplast.com/premium-relax-chairs.html
+
+
+FROM - bugatti_premium_arm_chairs.html
+TO - https://deccanplast.com/premium-arm-chairs.html
+
+
+FROM - bently_premium_arm_chairs.html
+TO - https://deccanplast.com/premium-arm-chairs.html
+
+
+FROM - lexus_premium_high_back_chairs.html
+TO - https://deccanplast.com/premium-high-back-chairs.html
+
+
+FROM - porsche_premium_high_back_chairs.html
+TO - https://deccanplast.com/premium-high-back-chairs.htmlcenter-tables-trolley.html
+
+
+
+FROM - mercedes_premium_high_back_chairs.html
+TO - https://deccanplast.com/premium-high-back-chairs.html
+
+
+FROM - brezza_premium_dining_chairs.html
+TO - https://deccanplast.com/premium-dining-chairs.html
+
+
+
+FROM - hexa_premium_dining_chairs.html
+TO - https://deccanplast.com/premium-dining-chairs.html
+
+FROM - crysta_premium_dining_chairs.html
+TO - https://deccanplast.com/premium-dining-chairs.html
+
+
+FROM - camry_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - accord_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - amaze_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - eon_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - brio_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - up_mid_back_arm_chairs.html
+TO - https://deccanplast.com/midback-arm-chairs.html
+
+
+FROM - figo_high_back_dining_chairs.html
+TO - https://deccanplast.com/high_back-dining-chairs.html
+
+FROM - polo_high_back_dining_chairs.html
+TO - https://deccanplast.com/high-back_dining-chairs.html
+
+
+FROM - nano_armless_chairs.html
+TO - https://deccanplast.com/armless-chairs.html
+
+
+FROM - mangalore_dining_tables.html
+TO - https://deccanplast.com/dining-tables.html
+
+
+FROM - calicut_dining_tables.html
+TO - https://deccanplast.com/dining-tables.html
+
+
+FROM - innova_multipurpose_tables.html
+TO - https://deccanplast.com/center-tables-trolley.html
+
+
+FROM - swift_center_tables.html
+TO - https://deccanplast.com/center-tables-trolley.html
+
+FROM - ritz_multi_seating.html
+TO - https://deccanplast.com/multi-seating-solutions.html
+
+
+FROM - ferrari_mini_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - lotus_mini_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - noble_mini_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - baby_eon_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - baby_abcd_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - baby_up_chairs.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - rocker_toys.html
+TO - https://deccanplast.com/children_chairs.html
+
+
+FROM - jumbo_crates_double_wall.html
+TO - https://deccanplast.com/crates.html
+
+
+FROM - jumbo_crates_single_wall.html
+TO - https://deccanplast.com/crates.html
+
+
+
+FROM - jumbo_crates_single_wall_handle.html
+TO - https://deccanplast.com/crates.html
+
+
+
+FROM - mp-21-utility-crate.html
+TO - https://deccanplast.com/crates.html
+
+
+
+FROM - mp-22-utility-crate.html
+TO - https://deccanplast.com/crates.html
+
+
+FROM - multipurpose_crates.html
+TO - https://deccanplast.com/crates.html
+
+
+
+
+FROM - mp-11-mini-veg-crate.html
+TO - https://deccanplast.com/crates.html
+
+
+
+
+FROM - mp-12-mini-veg-crate.html
+TO - https://deccanplast.com/crates.html
+
+
+
+
+FROM - bottle_crates.html
+TO - https://deccanplast.com/crates.html
+
+
+
+FROM - sindhushree_butti_25.html
+TO - https://deccanplast.com/baskets.html
+
+
+FROM - sindhushree_butti_21.html
+TO - https://deccanplast.com/baskets.html
+
+
+
+FROM - sindhushree_butti_18.html
+TO - https://deccanplast.com/baskets.html
+
+
+
+FROM - jayashree_butti.html
+TO - https://deccanplast.com/baskets.html
+
+
+
+
+FROM - buckets.html
+TO - https://deccanplast.com/baskets.html
+
+
+
+
+
+
+

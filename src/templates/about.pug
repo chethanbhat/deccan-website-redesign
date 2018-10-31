@@ -1,20 +1,28 @@
 extends partials/head.pug
 
 block title 
-        title Furniture
+        title About Deccan Plast Industries
 
 block content
+    block page
+        - var page = "about"
     .container
         .card#outer-card     
             .card-image
-                img(src="images/about-us.png", alt="About-us")
+                img(src="images/Collage.jpg", alt="About-us")
             .card-content
                 h1.page-title.center-align About the Company
                 p.page-description Founded in 1992, Deccan Group is an acknowledged initiator and innovator of coastal Karnataka's plastics industry. No wonder that Deccan Plast Industries were first to offer the widest and most comprehensive Quality Molded Solutions.
                 p.page-description The Deccan Plast Industries has an advanced “state of the art” factory in Mangaluru, constructed in the standards matching any MNC factory having latest injection molding machines and molds and other equipment, is powered by latest technology complemented by in-house R & D and product development.
                 p.page-description Deccan Plast has a vision and has undertaken an intense mission to offer “Quality Molded Solutions” for every consumer needs at a very affordable price point.
                 p.page-description Deccan Plast products processing 100% virgin plastic granules, and promise to maintain high quality assurance standards, giving the customers full “VALUE FOR MONEY”.    
+
+              
+                div.iso-certificate
+                    img.center-align(src="images/iso_certificate.png", alt="ISO-Certificate")
+                    p.page-title.center-align ISO 9001:2015 Certificate
+                                                                        
                 .center-align                                                        
-                    a(href="products.html" class="waves-effect waves-light btn-small red") 
-                        i.material-icons.left home
-                        | Home                                                          
+                    a(href="index.html" class="waves-effect waves-light btn-small red") 
+                        i.material-icons.left arrow_back
+                        | BACK    

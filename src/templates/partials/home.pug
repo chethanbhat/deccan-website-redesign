@@ -18,7 +18,7 @@ html(lang="en")
         block title
             title Deccan Plast Industries, Mangalore
     body
-        a#home-menu-toggle.menu-icon.waves-effect.waves-light.btn-floating.btn-small.red.index-toggle
+        a#menu-toggle.menu-icon.waves-effect.waves-light.btn-floating.btn-small.red.index-toggle.home-menu-toggle
             i.material-icons menu
         #side-nav.sidenav
             block side-nav
@@ -26,6 +26,24 @@ html(lang="en")
             block footer
                 include footer.pug
         .content
+            nav.main-nav
+                .container
+                    .nav-wrapper
+                        a(href="#", class="brand-logo") 
+                            img(src="images/logo.png", alt="Logo of Deccan Plast Industries")
+                        ul#nav-mobile.right.hide-on-med-and-down
+                            li.active
+                                a(href="index.html") Home
+                            li
+                                a(href="about.html") About
+                            li
+                                a(href="products.html") Products
+                            li
+                                a(href="ads.html") Media                            
+                            li
+                                a(href="career.html") Careers
+                            li
+                                a(href="contact.html") Contact          
             block content
         .footer
             block main-footer
@@ -33,6 +51,9 @@ html(lang="en")
             p.center-align Site By 
              a.creator(href="https://vibs.co.in/") VIBS, Mangalore
             p.center-align Design, Development & Digital Marketing
+            a#scroll-top.waves-effect.waves-light.btn-floating.btn-big.red
+                    i.material-icons.right arrow_upward
+                    | View All
         block scripts
             include owl.pug
             include scripts.pug
